@@ -1,77 +1,90 @@
 <!DOCTYPE html>
 
 <html lang="es">
-     <head>
-         <meta charset="utf-8" />       
-	   <title>Click</title>
 
-           <meta name="description" content="Pagina de compras por internet" />
-           <meta  name="author" content="Click" />
-           <meta name="keywords" content=" Click, comprar click, pagina de ventas click, supermercados" /> 
-           
-		   <style>
-		        header {background: #8BB0EC
-				        }
-		        
-		        footer {background: blue
-				}
-	             #tituloclickuno{background: #8BB0EC}
-		   </style>
-         
-		   <link href="styles.css" rel="stylesheet" type="text/css"/>
-		   <link href="Index.html">
-		  
-		   
-	 </head>
+<head>
+	<meta charset="utf-8" />
+	<title>Click</title>
 
-      <body>
-         
-		 <header>
-		 
-		   <div class="wrapper">
-		     
-			  <h1 id="tituloclickuno">Click
-			  
-			  
-		          <nav>
-		             <a href="texto.html">Inicio</a>
-                     <a href="#">Carrito</a>
-				     <a href="#">Inventario</a>
-				     <a href="InicioDeSesion.html">Iniciar Sesion</a>
-					 
-				
-		           </nav>
-			 
-				 
-              </h1> 
-			  
-			</div> 
-         </header>
-	      
-	     <section>
-		    <article>
-			      <h1 id="titulodos">Para continuar, necesitamos que compruebes tu ubicacion, los locales adheridos aparecen en este mapa:</h1>
-		          <div id="mapa">
-				  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3406.1682713312025!2d-58.02488788530741!3d-31.381923401725007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1592109616978!5m2!1ses-419!2sar" width="50%;" height="450" border="right;" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-			      
-		    </article>
-		 
-		 </section>
-	  	   	 <aside id="asideleft">
-	 	     Aqui puedes encontrar los locales adheridos 
-	          </aside> 
-	     
-	    
+	<meta name="description" content="Pagina de compras por internet" />
+	<meta name="author" content="Click" />
+	<meta name="keywords" content=" Click, comprar click, pagina de ventas click, supermercados" />
 
-         <div id="cuerpotres">
-		 <footer style="color:black", class="pie de pagina">
-		      Aca tenemos que poder la atencion al cline y informacion mportante como por ejemplo contactos.
-		     
-			 <p>comentarios.</p><p> <a href=""Contactos</a></p>		     
-		 </footer>
-	     </div>  
-	
-	</body>
+	<style>
+		header {
+			background: #8BB0EC
+		}
+
+		footer {
+			background: blue
+		}
+
+		#tituloclickuno {
+			background: #8BB0EC
+		}
+	</style>
+
+	<link href="styles.css" rel="stylesheet" type="text/css" />
+	<link href="Index.html">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}">
+
+
+</head>
+
+<body>
+
+	<header>
+
+		<div class="wrapper">
+
+			<h1 id="tituloclickuno">Click
+
+
+				<nav>
+					<a href="/">Inicio</a>
+					<a href="#">Carrito</a>
+					<a href="#">Inventario</a>
+					<a href="/Sesion">Iniciar Sesion</a>
+
+
+				</nav>
+
+
+			</h1>
+
+		</div>
+	</header>
+
+	<section>
+		<article>
+			<h1 id="titulodos">Para continuar, necesitamos que compruebes tu ubicacion, los locales adheridos aparecen
+				en este mapa:</h1>
+			<div id="mapa">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3406.1682713312025!2d-58.02488788530741!3d-31.381923401725007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1592109616978!5m2!1ses-419!2sar"
+					width="50%;" height="450" border="right;" style="border:0;" allowfullscreen="" aria-hidden="false"
+					tabindex="0"></iframe>
+
+		</article>
+
+	</section>
+	<aside id="asideleft">
+		Aqui puedes encontrar los locales adheridos
+	</aside>
+
+
+
+	<div id="cuerpotres">
+		<footer style="color:black" , class="pie de pagina">
+			Aca tenemos que poder la atencion al cline y informacion mportante como por ejemplo contactos.
+
+			<p>comentarios.</p>
+			<p> <a href="" Contactos</a></p>
+		</footer>
+	</div>
+
+</body>
+
 </html>
 
 
