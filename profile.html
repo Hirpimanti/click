@@ -1,0 +1,47 @@
+{% extends 'layout.html' %} {% block title %}Profile{% endblock %} {% block content %}
+<h1>Profile Page</h1>
+<div>
+    <p>Los datos de tu cuenta se encuentran debajo:</p>
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td>{{ datos2['Nombredellocal'] }}</td>
+        </tr>
+        <tr>
+            <td>Username:</td>
+            <td>{{ datos2['Direccion'] }}</td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td>{{ datos2['Email'] }}</td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>{{ datos2['Contraseña'] }}</td>
+        </tr>
+    </table>
+</div>
+
+<h1>Profile Page</h1>
+<div>
+    <p>Los datos de tu cuenta se encuentran debajo:</p>
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td>{{ datos['Nombre'] }}</td>
+        </tr>
+        <tr>
+            <td>Username:</td>
+            <td>{{ datos['Email'] }}</td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td>{{ datos['Contraseña'] }}</td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td>{{ datos['ConfirmarContraseña'] }}</td>
+        </tr>
+    </table>
+</div>
+{% endblock %}
