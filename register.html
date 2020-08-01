@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="e">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styloregistronuevo.css')}}">
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <title>Click-Registro</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-container">
+            <div class="register">
+                <h2>Registrar Usuario</h2>
+
+                <form action="{{ url_for('register') }}" method="post" autocomplete="off">
+                    <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                    <input type="text" id="Nombre Completo" name="Nombre" placeholder="Nombre Completo" class="nombre">
+                    <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                    <input type="text" id="Email" name="Email" placeholder="Email" class="correo">
+                    <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                    <input type="password" id="Contraseña" name="Contraseña" placeholder="Contraseña" class="pass">
+                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                    <input type="password" id="Confirmar Contraseña" name="ConfirmarContraseña" placeholder="Confirma contraseña" class="repass">
+                    <p>Estoy de acuerdo con <a href="#"> Terminos y condiciones</a></p>
+
+                    <div id="msg">{{ msg }}</div>
+                    <input type="submit" value="Registrar" class="submit" name="">
+                    <p class="blink"><a href="{{ url_for('login') }}">¿Ya tengo cuenta?</a></p>
+
+                </form>
+            </div>
+
+            <div class="login">
+                <h2>Registrar Comercio</h2>
+                <div class="login-items">
+                    <form action="{{ url_for('register2') }}" method="post" autocomplete="off">
+                        <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                        <input type="text" name="Nombredellocal" placeholder="Nombre del local" class="nombre">
+                        <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                        <input type="text" name="Direccion" placeholder="Direccion" class="Email">
+                        <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                        <input type="email" name="Email" placeholder="Email" class="Email">
+                        <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                        <input type="password" name="Contraseña" placeholder="Contraseña" class="repass">
+
+                        <div id="msg">{{ msg }}</div>
+                        <p>Estoy de acuerdo con <a href="#"> Terminos y condiciones</a></p>
+                        <input type="submit" value="Registrar" class="submit" name="">
+
+                        <p class="blink"><a href="{{ url_for('login') }}">¿Ya tengo cuenta?</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
