@@ -1,0 +1,145 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	background-image: url('Fond2.jpg');
+}
+
+
+.container{
+	width: 100%;
+	height: 100vh;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login-container{
+	display: flex;
+	width: 700px;
+	height: auto;
+	background: 8BB0EC;
+	box-shadow: 7px 13px 37px #000;
+	padding: 10px;
+	
+
+}
+
+.register, .login{
+	flex: 1;
+}
+.register{
+	padding: 40px;
+	position: relative;
+	background-color:#2980B9;
+}
+.register h2{
+	color: #000;
+	margin-bottom: 45px;
+}
+
+.register input{
+	width: 100%;
+	padding: 5px;
+	font-size: 16px;
+	margin-bottom: 25px;
+	border-top-style: none;
+	border-left-style:none ;
+	border-right-style:none ;
+	border-bottom: 1px solid #a8a8a8;
+}
+
+.register .submit{
+	font-family: verdana;
+	width: 100%;
+	background: #1f53c5;
+	border:none;
+	padding:12px;
+	color: white;
+	margin: 16px 0;
+	font-size:16px;
+	border: 2px solid black;
+}
+
+.login .submit{
+	font-family: verdana;
+	width: 100%;
+	background: #1f53c5;
+	border:none;
+	padding:12px;
+	color: white;
+	margin: 16px 0;
+	font-size:16px;
+	border: 2px solid black;
+}
+
+
+.login input{
+	width: 100%;
+	padding: 5px;
+	font-size: 16px;
+	margin-bottom: 25px;
+	border-top-style: none;
+	border-left-style:none ;
+	border-right-style:none ;
+	border-bottom: 1px solid #a8a8a8;
+
+
+}
+
+.login{
+	background-image:repeating-linear-gradient(to bottom right, #1ab6b6, #4cac6e) ;
+	padding: 40px;
+}
+
+
+.login h2{
+	color: #000;
+	margin-bottom: 45px;
+}
+
+.login button i{
+	position: absolute;
+	top: 12px;
+	left: 12px;
+}
+
+.login button{
+	width: 100%;
+	margin: 15px 0px;
+	padding: 10px;
+	cursor: pointer;
+	position: relative;
+}
+
+.register::after{
+	content: 'OR';
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 50%;
+	right: -23px;
+	padding: 10px;
+	text-align: center;
+	font-size: 19px;
+	background: #f1f1f1;
+	border-radius: 50%;
+	transform: translateY(-50%);
+	box-shadow: -1px 1px 3px 1px rgba(0, 0, 0, .2);
+	color: #7c7c7c;
+}
+
+  .register p{
+	height:40px;
+	text-align: center;
+	font-size:18 px;
+	color: #000;	
+}
+
+.login p{
+	height:40px;
+	text-align: center;
+	font-size:18 px;
+	color: #000;
+}

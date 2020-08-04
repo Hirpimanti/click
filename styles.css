@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrepper {
+    width: 90%;
+    max-width: 100px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#tituloclickuno {
+    font-size: 100px;
+    font-family: arial;
+    float: left;
+    width: 100%;
+    border: 4px solid #dadada;
+    text-decoration: none;
+    line-height: 100px;
+    background-color: orange;
+}
+
+header nav {
+    float: right;
+    line-height: 100px;
+}
+
+header {
+    width: 100%;
+    overflow: hidden;
+    margin: bottom;
+}
+
+header nav a {
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    line-height: normal;
+    text-decoration: none;
+    transition: all 500m ease;
+    color: black;
+    border-radius: 50px;
+}
+
+header nav a:hover {
+    background: #f56f3a;
+}
+
+#mapa {
+    text-align: center;
+    background: #d8e2e9;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#titulodos {
+    text-align: center;
+    font-family: arial;
+    text-align: right
+}
+
+#cuerpotres {
+    text-align: center;
+}
+
+#asideleft {
+    font-size: 17px;
+    font-family: arial;
+    width: 60%;
+    background: orange;
+}
+
+footer {
+    height: 70px;
+    background-color: orange;
+    margin-top: 5px;
+    color: black;
+    font-weight: 800;
+    font-size: 17px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 25px;
+    font-family: arial;
+    border: 1px solid black;
+}
