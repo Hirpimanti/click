@@ -18,6 +18,15 @@ app.config['MYSQL_DATABASE_DB'] = 'registro'
 app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 mysql.init_app(app)
 
+
+
+
+@app.route('/')
+def home():
+    return render_template('Pagina_principal.html')
+
+
+
 # http://localhost:5000/pythonlogin/ - esta es la pagina para iniciar sesion
 
 
@@ -172,7 +181,7 @@ def register2():
 
 
 @app.route('/')
-def home():
+def home2():
 
     if 'loggedin' in session:
 
@@ -213,11 +222,13 @@ def profile():
     if 'loggedin' in session:
 
         cursor.execute('SELECT * FROM datos WHERE id = %s', [session['id']])
-        datos = cursor.fetchone()
+        datos2 = cursor.fetchone()
 
         return render_template('profile.html', datos=datos)
     # esto es por is el usuario nopuede ingresar, lo redirecciona
     return redirect(url_for('login'))
+
+    
 
 
 if __name__ == '__main__':
