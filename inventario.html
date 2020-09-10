@@ -1,0 +1,21 @@
+{% extends 'layout2.html' %} {% block title %}Perfil | Click{% endblock %} {% block content %}
+<h1>Click | Inventario</h1>
+<div>
+    <p>Los productos de tu local se encuentran debajo:</p>
+    <table>
+        <tr>
+            <td>Nombre:</td>
+            <td>{{ productos['Nombre'] }}</td>
+        </tr>
+        <tr>
+            <td>Precio:</td>
+            <td>{{ productos['Precio'] }}</td>
+        </tr>
+        <tr>
+            <td>Cantidad:</td>
+            <td>{{ productos['Cantidad'] }}</td>
+        </tr>
+
+    </table>
+</div>
+{% endblock %}
