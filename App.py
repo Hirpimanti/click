@@ -1,6 +1,8 @@
 # app.py
 from flask import Flask, request, session, redirect, url_for, render_template
 from flaskext.mysql import MySQL
+from tkinter import ttk
+from tkinter import*
 import pymysql
 import re
 
@@ -228,8 +230,23 @@ def profile():
     # esto es por is el usuario nopuede ingresar, lo redirecciona
     return redirect(url_for('login'))
 
-    
+
+@app.route('/inventario')
+def inventario():
+    conn = mysql.connect()
+    cursor = conn.cursor(pymysql.cursors.DictCursor)
+
+    if 'loggedin' in session:
+        cursor.execute('SELECT * FROM productos WHERE id = %s', [session['id']])
+        productos = cursor.fetchone()
+
+        return render_template('inventario.html', productos=productos)
+
+
+
+  
 
 
 if __name__ == '__main__':
     app.run(debug=True)
+
